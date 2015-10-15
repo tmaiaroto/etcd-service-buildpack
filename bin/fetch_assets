@@ -7,10 +7,10 @@
 mkdir -p blobs/etcd
 
 if [[ ! -f blobs/etcd/etcd-0.3.0.tar.gz ]]; then
-  echo "blobs/etcd/etcd-0.3.0.tar.gz: fetching"
-  curl -L https://github.com/coreos/etcd/archive/v0.3.0.tar.gz -o blobs/etcd/etcd-0.3.0.tar.gz
+  echo "blobs/etcd/etcd-2.2.0.tar.gz: fetching"
+  curl -L https://github.com/coreos/etcd/releases/download/v2.2.0/etcd-v2.2.0-linux-amd64.tar.gz -o blobs/etcd/etcd-0.3.0.tar.gz
 else
-  echo "blobs/etcd/etcd-0.3.0.tar.gz: exists"
+  echo "blobs/etcd/etcd-2.2.0.tar.gz: exists"
 fi
 
 mkdir -p blobs/go

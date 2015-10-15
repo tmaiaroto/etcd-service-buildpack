@@ -8,8 +8,8 @@ export GOROOT=/tmp/blobs/go/go
 export PATH=$GOROOT/bin:$PATH
 
 cd /tmp/blobs/etcd
-tar xfz etcd-0.3.0.tar.gz
-cd etcd-0.3.0
+tar xfz etcd-2.2.0.tar.gz
+cd etcd-2.2.0
 
 ./build
 
